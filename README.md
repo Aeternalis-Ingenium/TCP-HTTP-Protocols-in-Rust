@@ -27,7 +27,7 @@ This repository consists of 4 mini projects to learn about the foundation of TCP
 
 ### Summary
 
-These are the implemented components in the `tcpipmodel` directory:
+These are the implemented components in the `protocols` directory:
 
 * The TCP/IP model is a simplified set of standards and protocols for communication over the internet. It is organized into four abstract layers: Network Access layer, Internet Layer, Transport Layer and the Application layer. TCP is the transport-layer protocol over which other application-level protocols such as HTTP operate. We built a server and client that exchanged data using the TCP protocol.
 * TCP is also a stream-oriented protocol where data is exchanged as a continuous stream of bytes.
