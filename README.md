@@ -25,6 +25,21 @@ This repository consists of 4 mini projects to learn about the foundation of TCP
 * `http/`:
   * **HTTP Library** $\rightarrow$ Interpreting the byte stream and converting it to HTTP request.
 
+## Setup Guide
+
+To inspect the endpoints `cd` to `protocols/` and run the following:
+
+```shell
+cargo run -p httpserver
+```
+
+The endpoints can be found in the following URLs:
+
+* `localhost:3000/`
+* `localhost:3000/health`
+* `localhost:3000/api/shipping/orders`
+* `localhost:3000/invalid-path`
+
 ### Summary
 
 These are the implemented components in the `protocols/` directory:
