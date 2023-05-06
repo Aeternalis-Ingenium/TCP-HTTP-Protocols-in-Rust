@@ -27,7 +27,13 @@ This repository consists of 4 mini projects to learn about the foundation of TCP
 
 ## Setup Guide
 
-To inspect the endpoints `cd` to `protocols/` and run the following:
+Run the server always from `protocols/`directory.
+
+```shell
+cd protocols
+```
+
+To inspect the endpoints:
 
 ```shell
 cargo run -p httpserver
@@ -39,6 +45,24 @@ The endpoints can be found in the following URLs:
 * `localhost:3000/health`
 * `localhost:3000/api/shipping/orders`
 * `localhost:3000/invalid-path`
+
+To play with TCP server and client:
+
+* First, start up the TCP server:
+
+ ```shell
+ cargo run -p tcpserver
+ ```
+
+If it's successful, you will see the message "Running on port 3000"
+
+* Then open another terminal, and execute the following:
+
+ ```shell
+ cargo run -p tcpclient
+ ```
+
+In the TCP client, you will see the message "PING!" and when you go to the terminal that runs the TCP server, you will see "Connection established".
 
 ### Summary
 
@@ -63,4 +87,4 @@ I learn the implementation of TCP and HTTP protocols in Rust mostly from this am
 
 **Disclaimer: I'm not in any way paid to suggest the above book. It is just an amazing book!**
 
---
+---
